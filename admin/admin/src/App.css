@@ -1,0 +1,46 @@
+/* Full page container */
+.app-content {
+    font-family: sans-serif;
+    }
+    
+    /* Top navigation bar */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+    
+    /* Layout wrapper */
+    .content {
+        display: flex;
+        margin-top: 60px;
+        margin: 15px auto;
+        position: relative;
+         /* space for navbar */
+    }
+    
+    /* Sidebar */
+    .sidebar {
+        
+        width: 220px;
+        height: calc(100vh - 60px);
+        position: fixed;
+        top: 60px; /* sits below navbar */
+        left: 0;
+        background: #fff;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+        padding: 1rem 0;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+    
+    

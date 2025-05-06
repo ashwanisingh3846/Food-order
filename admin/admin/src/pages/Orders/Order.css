@@ -1,0 +1,158 @@
+/* Main container */
+.order-content {
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 12%;
+    font-family: poppins , sans-serif;
+    }
+    
+    .order-content h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #3a3333;
+        margin: 10px;
+    }
+    
+    /* Orders list */
+    .order-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    /* Individual order container */
+    .order-item {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Top layout of each order */
+    .both {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    /* Left section */
+    .cotent {
+        flex: 1 1 60%;
+    }
+    
+    /* Icon and items row */
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .row img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .order-item-food {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.5;
+        word-break: break-word;
+        max-width: 100%;
+    }
+    
+    /* Address block */
+    .address-details p {
+        margin: 0.2rem 0;
+        font-size: 0.95rem;
+        color: #666;
+    }
+    
+    /* Right section with item info and status */
+    .items-info {
+        flex: 1 1 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
+    .order-item-city{
+        font-size: 1rem;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .item-length {
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .items-info p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    /* Dropdown styling */
+    .items-info select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        cursor: pointer;
+    }
+    
+    /* Responsive rules */
+    @media (max-width: 1024px) {
+        .order-content {
+        padding: 1.5rem 1rem;
+        margin-left: 30%;
+        }
+    
+        .both {
+        flex-direction: column;
+        }
+    
+        .cotent,
+        .items-info {
+        width: 100%;
+        }
+    
+        .items-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        }
+    
+        .items-info select {
+        width: 100%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .items-info {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+    
+        .order-item-food {
+        font-size: 0.95rem;
+        }
+    
+        .address-details p {
+        font-size: 0.9rem;
+        }
+    }
+    
