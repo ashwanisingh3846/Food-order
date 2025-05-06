@@ -6,7 +6,7 @@ export const StoreProvider = (props) => {
         const [cartItems, setCartItems] = React.useState({});
         const [token , setToken] = React.useState("");
         const [food_list , setFoodList] = React.useState([]);
-        const url = 'http://localhost:8080'
+        const url = 'https://food-order-b.onrender.com'
         const addToCart =async (itemId) => {
             if(!cartItems[itemId]){
                 setCartItems({...cartItems, [itemId]: 1});
