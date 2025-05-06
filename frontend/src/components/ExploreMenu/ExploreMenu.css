@@ -1,0 +1,155 @@
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 1rem;  
+}
+.menu-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+  .menu-head h1{
+    border-right-color: aqua;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+  .menu-head p{
+    border-right-color: aqua;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    width: 40%;
+  }
+
+    .menu-list::-webkit-scrollbar{
+        display: none;
+    }
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}   
+.menu-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    gap: 1rem;
+}
+.active{
+    border: 3px solid rgb(159, 22, 12);
+    color: rgb(234, 50, 50);
+    cursor: pointer;
+    position: relative;
+
+}
+.menu-item p{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+.menu-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    gap: 1rem;
+}
+@media screen and (max-width: 1050px) {
+    .menu-head h1{
+        font-size: 1.2rem;
+    }
+    .menu-head p{
+        font-size: 1rem;
+    }
+    .menu-item p{
+        font-size: 1rem;
+    }
+    .menu-item img{
+        width: 7.5vw;
+        min-width: 80px;
+        cursor: pointer;
+        border-radius: 50%;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-head h1{
+        font-size: 1.2rem;
+    }
+    .menu-list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: 100%;
+        overflow-y: hidden;
+        gap: 1rem;
+    }
+    .menu-head p{
+        font-size: 1rem;
+    }
+    .menu-item p{
+        font-size: 0.8rem;
+    }
+    .menu-item img{
+        width: 7.5vw;
+        min-width: 80px;
+        cursor: pointer;
+        gap: 1rem;
+    }
+    .menu-list h3{
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+    }
+}
+@media screen and (max-width: 650px) {
+    .menu-head h1{
+        font-size: 1.2rem;
+    }
+    .menu-head p{
+        display: none;
+    }
+    .menu-item p{
+        font-size: 1rem;
+    }
+    .menu-list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: 100%;
+        overflow-y: hidden;
+        gap: 1rem;
+    }
+    .menu-item img{
+        width: 7.5vw;
+        min-width: 80px;
+        cursor: pointer;
+        border-radius: 50%;
+        gap: 1rem;
+    }
+    .menu-list h3{
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+    }
+    .menu-list p{
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+    }
+    
+}

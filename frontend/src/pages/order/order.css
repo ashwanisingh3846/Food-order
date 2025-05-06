@@ -1,0 +1,89 @@
+.place-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: flex-start; /* Align both sections at the top */
+    }
+    .place-order-left-details,
+    .place-order-write {
+        flex: 1 1 40%;
+        min-width: 300px;
+        box-sizing: border-box;
+    }
+    
+    /* Ensure the same padding for both */
+    .place-order-left-details {
+        padding: 1.5rem;
+        background: #fff;
+    }
+    
+    .place-order-left-details input,
+    .multi-field input {
+        width: 100%;
+        padding: 10px 14px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .multi-field {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .multi-field input {
+        flex: 1;
+    }
+    
+    .place-order-write {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding:5px;
+    }
+    .cart-totals-details-left .subtotal,
+    .delivery-fee,
+    .total {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cart-totals-details-left button {
+        padding: 12px;
+        background-color: #333;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+    
+    .cart-totals-details-left button:hover {
+        background-color: #555;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .place-order {
+        flex-direction: column;
+        }
+    
+        .multi-field {
+        flex-direction: column;
+        gap: 0;
+        }
+    
+        .place-order-left-details,
+        .place-order-write {
+        padding: 1rem;
+        }
+    }
+    
