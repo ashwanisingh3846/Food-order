@@ -29,6 +29,7 @@
     
 }
 .cart-item img{
+    cursor: pointer;
     width: 100px;
     border-radius: 10px;
 }

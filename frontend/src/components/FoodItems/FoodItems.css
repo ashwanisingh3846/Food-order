@@ -50,6 +50,7 @@
     flex-direction: column;
 }
 .overlay{
+    cursor: pointer;
     position: absolute;
     top: 9rem;
     width: 40px;
