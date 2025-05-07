@@ -22,7 +22,6 @@ const App = () => {
         <Route path='/add' element={<Add url={url} />} />
         <Route path='/list' element={<List  url={url} />} />
       </Routes>
-      
       </div>
     </div>
   )
