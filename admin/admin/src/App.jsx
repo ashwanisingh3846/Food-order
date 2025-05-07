@@ -9,6 +9,7 @@ import './App.css'
 import Add from './pages/Add/Add'
 import List from './pages/List/List'
 const App = () => {
+  const token = localStorage.getItem("token");
   const url = 'https://food-delivery-backend-ln83.onrender.com'
   return (
     <div className='app-content'>
@@ -17,7 +18,7 @@ const App = () => {
       <div className='content'>
       <Sidebar />
       <Routes>
-        <Route path='/orders' element={<Orders url={url} />} />
+        <Route path='/orders' element={<Orders url={url } token={token} />} />
         <Route path='/add' element={<Add url={url} />} />
         <Route path='/list' element={<List  url={url} />} />
       </Routes>

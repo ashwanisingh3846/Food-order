@@ -3,12 +3,13 @@ import './Order.css'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { assets } from '../../assets/assets'
-const Order = ({url}) => {
+const Order = ({url }) => {
   
   const [data , setData] = React.useState([])
+
   let orderDetails;
 useEffect(
-    orderDetails =  () => {
+    orderDetails =  ( ) => {
     axios.get(`${url}/api/order/allorders` )
     .then((response) => {
           if(response.data.success){
@@ -24,9 +25,9 @@ useEffect(
     console.log(data);
     },[])
     const statusHandler = async (event , orderId) => {
-      let response = await axios.post(`${url}/api/order/status` , {orderId , status : event.target.value}, { headers: { token: localStorage.getItem("token") } });
+      let response = await axios.post(`${url}/api/order/status` , {orderId , status : event.target.value});
       if(response.data.success){
-          orderDetails();
+          await orderDetails();
       }
     }  
   return (
@@ -61,9 +62,9 @@ useEffect(
               
               <p className="order-item-city">
               <b>Address :</b>
-                 <p>{item.address.city}</p>,
-                 <p>{item.address.state} </p>,
-                 <p> {item.address.zip}</p> , 
+                <p>{item.address.city}</p>,
+                <p>{item.address.state} </p>,
+                <p> {item.address.zip}</p> , 
                     {item.address.country}
               </p>
               <p><b>Phone : </b>{item.address.phone}</p>

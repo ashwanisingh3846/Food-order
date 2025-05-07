@@ -107,20 +107,40 @@ const orders = async (req,res)=>{
         orders,
     });
 }
+console.log("hello from order controller");
+
 const trackOrderStatus = async (req, res) => {
-    try{
-        const order = await orderModel.findByIdAndUpdate(req.body.orderId, {status: req.body.status});
+    try {
+        const { orderId, status } = req.body;
+        if (!orderId || !status) {
+            return res.status(400).json({
+                success: false,
+                message: "Missing orderId or status in request body"
+            });
+        }
+        const updatedOrder = await orderModel.findByIdAndUpdate(
+            orderId,
+            { status },
+            { new: true }
+        );
+        if (!updatedOrder) {
+            return res.status(404).json({
+                success: false,
+                message: "Order not found"
+            });
+        }
         res.json({
             success: true,
-            order,
+            message: "Order status updated",
+            data: updatedOrder
         });
-    }catch(error){
+    } catch (error) {
         console.log(error);
         res.status(500).json({
             success: false,
-            message: "Error while fetching orders",
-            error:error.message
+            message: "Error while updating order status",
+            error: error.message
         });
     }
-}
+};
 export { placeOrder, verifyOrder, myOrders, orders, trackOrderStatus };
