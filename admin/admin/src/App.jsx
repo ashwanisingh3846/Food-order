@@ -9,7 +9,7 @@ import './App.css'
 import Add from './pages/Add/Add'
 import List from './pages/List/List'
 const App = () => {
-  const url = 'https://food-order-b.onrender.com'
+  const url = 'https://food-delivery-backend-ln83.onrender.com'
   return (
     <div className='app-content'>
       <ToastContainer />
