@@ -11,11 +11,7 @@ const Verify =  () => {
     const success = searchparam.get('success');
     const orderId = searchparam.get('orderId');
     const verifyOrder = async () =>{
-        console.log("hitting the verifyOrder backend")
         const responce = await axios.post(`${url}/api/order/verifyorder?orderId=${orderId}&success=${success}`);
-        console.log(responce.data); 
-        console.log(responce.data.success);
-        console.log("after hitting the verifyOrder backend")
         if(responce.data.success){
             navigate("/myorders");
         }
@@ -35,5 +31,4 @@ const Verify =  () => {
         </div>
     )
 }
-
 export default Verify
