@@ -9,6 +9,7 @@ import userRoutes from "../backend/routes/userRoutes.js";
 import cartRoutes from "../backend/routes/cartRoutes.js";
 import orderRoutes from "../backend/routes/orderRoutes.js";
 const app = express();
+app.use(express.json());
 app.use(cors());
 app.use("/api/food" , router);
 app.use("/images", express.static("uploads"));
