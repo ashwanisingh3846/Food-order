@@ -6,7 +6,7 @@ export const StoreProvider = (props) => {
         const [cartItems, setCartItems] = React.useState({});
         const [token , setToken] = React.useState("");
         const [food_list , setFoodList] = React.useState([]);
-        const url = 'https://food-delivery-backend-ln83.onrender.com'
+        const url = 'https://online-food-backend-erhb.onrender.com'
         const addToCart =async (itemId) => {
             if(!cartItems[itemId]){
                 setCartItems({...cartItems, [itemId]: 1});
@@ -62,7 +62,7 @@ export const StoreProvider = (props) => {
             loadData();
         }, []);
         
-    const contextValue ={
+    const contextValue = {
         cartItems
         ,addToCart
         ,removeFromCart,

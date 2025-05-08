@@ -124,7 +124,7 @@
 }
 @media  screen and (max-width: 750px){
     .cart-item-title{
-        font-size: 0.8rem;
+        font-size: 1rem;
         gap: 10px;
         display: flex;
         flex-direction: row;
@@ -141,36 +141,25 @@
         align-items: center;
         justify-content: space-between;
     }
-    .cart-item img{
-        width: 70px;
-    }
-    .cart-item p{
-        font-size: 0.8rem;
-    }
-    .cart-totals{
-        font-size: 0.7rem;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
     .cart-totals-details-left{
-        font-size: 0.8rem;
-        height: 250px;
+        font-size:1rem;
+        height: 260px;
+        width: 100%;
     }
     .cart-totals-details-left button{
-        font-size: 0.5rem;
+        font-size: 1rem;
         width: 250px;
     }
-    .cart-totals-details-right button{
+    .cart-totals-details-right{
         font-size: 0.7rem;
         width: 100px;
+        display: none;
     }
 }
 @media  screen and (max-width: 500px){
         .cart-item-title{
             font-size: 0.6rem;
-            width: 100%;
-            display: flex;
+            width: 30%;
             gap: 10px;
         }
         .cart-item{
@@ -196,50 +185,26 @@
 
         }
         .cart-totals-details-left{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            justify-content: space-between;
             padding: 10px 20px;
-            font-size: 0.9rem;
-            width: 100%;
+            font-size: 0.8rem;
+            width:70%;
+            align-self: center;
         }
         .cart-totals-details-left button{
-            font-size: 0.5rem;
-            
+            width: 200px;
+            display: block;
+            align-self: center;
+            align-items: end;
+            justify-content: end;
         }
+        .cart-totals-details-right button{
         .cart-totals-details-right{
             display: none;
         }       
 
-
     }
-    @media screen and(max-width: 400px){
-        .cart-item-title{
-            font-size: 0.5rem;
-        }
-        .cart-item{
-            font-size: 0.8rem;
-        }
-        .cart-item img{
-            width: 50px;
-        }
-        .cart-item p{
-            font-size: 0.6rem;
-        }
-        .cart-totals{
-            font-size: 0.5rem;
-        }
-        .cart-totals-details-left{
-            font-size: 0.6rem;
-
-        }
-        .cart-totals button{
-            font-size: 0.6rem;
-        }
-        .cart-totals-details-right button{
-            font-size: 0.5rem;
-
-        }
-        .cart-totals-details-right input{
-            font-size: 0.6rem;
-
-        }
     }

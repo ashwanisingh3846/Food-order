@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import assets from "../../assets/assets"
-import SearchIcon from "../../icons/search"
+
 import { StoreContext } from '../context/storeContext'
 import './navbar.css'
 import { Link } from 'react-router-dom' 
@@ -11,7 +11,7 @@ const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = React.useState("menu")
     return (
     <div className="navbar">
-      <div className="navbar-left">
+      <div onClick={()=>navigate("/")} className="navbar-left">
           <img src={assets.logo} alt="logo" />
       </div>
       <div className="navbar-center">
@@ -22,8 +22,8 @@ const Navbar = ({ setShowLogin }) => {
       </div>
       <div className='navigate'>
       <div className="right-side">
-        <SearchIcon />
-    <img onClick={()=>navigate("/cart")} className='cart-img'  src="https://static.vecteezy.com/system/resources/previews/025/012/839/original/black-and-white-illustration-of-basket-icon-vector.jpg"  style={{width:'2rem',height:'2rem', "cursor":"pointer","background-color": "slategray"}} alt="basket" />
+        <img className='search-img' src={assets.search_icon} alt="" />
+    <img onClick={()=>navigate("/cart")} className='cart-img'  src={assets.basket_icon}  alt="basket" />
       {!token ?<button onClick={()=>{setShowLogin(true)}}  className='sign-in' >SignIn</button>:<div className="profile-icon">
         <div className="profile-pic">
         <img src={assets.profile_icon} alt="profile" />

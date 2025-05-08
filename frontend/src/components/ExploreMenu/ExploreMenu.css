@@ -3,11 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    gap: 1rem;  
+    overflow-x: scroll; 
 }
 .menu-head{
     display: flex;
@@ -74,29 +70,11 @@
     .menu-item p{
         font-size: 1rem;
     }
-    .menu-item img{
-        width: 7.5vw;
-        min-width: 80px;
-        cursor: pointer;
-        border-radius: 50%;
-        gap: 1rem;
-    }
 }
 
 @media screen and (max-width: 750px) {
     .menu-head h1{
         font-size: 1.2rem;
-    }
-    .menu-list {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: 100%;
-        overflow: scroll;
-        overflow-x: 100%;
-        overflow-y: hidden;
-        gap: 1rem;
     }
     .menu-head p{
         font-size: 1rem;
