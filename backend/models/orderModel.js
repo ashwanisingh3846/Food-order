@@ -10,6 +10,8 @@ const orderSchema = new mongoose.Schema({
     ],
     amount: Number,
     address: {
+        firstName: String,
+        lastName: String,
         street: String,
         city: String,
         zip: String,

@@ -11,7 +11,7 @@ import MyOrders from './pages/myOrders/myOrders.jsx'
 import Footer from './components/Footer/Footer.jsx'
 function App() {
   const [showLogin , setShowLogin] = React.useState(false)
-  const url = 'https://online-food-backend-erhb.onrender.com'
+  const url = 'http://localhost:8080'
   return (
     <>
     {showLogin ? <LoginPopup url={url} setShowLogin={setShowLogin} />:<></> }
