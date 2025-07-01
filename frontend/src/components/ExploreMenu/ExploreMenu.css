@@ -8,21 +8,26 @@
 .menu-head{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-bottom: 1rem;
-    width: 100%;
+    /* width: 100%; */
 }
   .menu-head h1{
     border-right-color: aqua;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
+    
   }
   .menu-head p{
     border-right-color: aqua;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    width: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #da0404;
   }
 
     .menu-list::-webkit-scrollbar{
@@ -61,6 +66,7 @@
     gap: 1rem;
 }
 @media screen and (max-width: 1050px) {
+    
     .menu-head h1{
         font-size: 1.2rem;
     }

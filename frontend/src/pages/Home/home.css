@@ -1,0 +1,125 @@
+.home-content {
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 12%;
+    font-family: poppins , sans-serif;
+    }
+    
+    .home-content h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #3a3333;
+        margin: 10px;
+    }
+    
+    /* Home page section */
+    .home-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section heading */
+    .home-section-heading {
+        font-size: 1.5rem;
+        color: #3a3333;
+    }
+    
+    /* Section content */
+    .home-section-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    /* Individual food item */
+    .home-item {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Image and name */
+    .home-item-image {
+        flex: 1 1 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .home-item-name {
+        flex: 1 1 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .home-item-name p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.5;
+        word-break: break-word;
+        max-width: 100%;
+    }
+    
+    /* Price and rating */
+    .home-item-price-rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .home-item-price-rating p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    /* Responsive rules */
+    @media (max-width: 1024px) {
+        .home-content {
+        padding: 1.5rem 1rem;
+        margin-left: 30%;
+        }
+    
+        .home-section-content {
+        flex-direction: column;
+        }
+    
+        .home-item {
+        flex-direction: column;
+        }
+    
+        .home-item-image,
+        .home-item-name {
+        width: 100%;
+        }
+    
+        .home-item-name {
+        margin-top: 1rem;
+        }
+    
+        .home-item-price-rating {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+    }   

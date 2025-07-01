@@ -49,7 +49,7 @@ export const StoreProvider = (props) => {
                 
                 await getFoodList();
                 const token = localStorage.getItem("token");
-                if (!token) {
+                if (token) {
                     setToken(token);
                     await loadCartData(token);
                 }

@@ -7,7 +7,7 @@ const FoodItems = ({id , name , image , price , description }) => {
     const { cartItems , addToCart , removeFromCart ,url} = React.useContext(StoreContext);
     return (
         <>
-        <div className="parent">
+     
         <div className="content">
         <div className="food-image-container">
             
@@ -15,6 +15,7 @@ const FoodItems = ({id , name , image , price , description }) => {
             <img className="food-img" src={`${url}/images/${image}`} 
             alt="food" />
         <div className="item-count">
+        
                 {
                     !cartItems[id] ? 
                     <div className="single-add">
@@ -32,18 +33,16 @@ const FoodItems = ({id , name , image , price , description }) => {
             
             <div className="food-item-info">
                 <div className="food-item-name-rating">
-                    <p>{name}</p>
+                    <span>{name}</span>
                     <img src={assets.rating_starts} alt="rating" />
                 </div>
-                <p className="food-item-disc">
-                    {description}
-                    <p> ${price}</p>
-                </p>
+                    <textarea style={{width:"200px" ,padding:"10px", alignItems:"center" , justifyItems:"center" , border:"none", fontSize:"1rem"}}
+                    className="food-item-disc" value={description} readOnly></textarea>
             </div>
-        </div>
-        </div>
+        <span> ${price}</span>
 
-    </div>
+        </div>
+        </div>
     </>
 )
 }

@@ -22,7 +22,6 @@ const Navbar = ({ setShowLogin }) => {
       </div>
       <div className='navigate'>
       <div className="right-side">
-        <img className='search-img' src={assets.search_icon} alt="" />
     <img onClick={()=>navigate("/cart")} className='cart-img'  src={assets.basket_icon}  alt="basket" />
       {!token ?<button onClick={()=>{setShowLogin(true)}}  className='sign-in' >SignIn</button>:<div className="profile-icon">
         <div className="profile-pic">
