@@ -36,8 +36,7 @@ const FoodItems = ({id , name , image , price , description }) => {
                     <span>{name}</span>
                     <img src={assets.rating_starts} alt="rating" />
                 </div>
-                    <textarea style={{width:"200px" ,padding:"10px", alignItems:"center" , justifyItems:"center" , border:"none", fontSize:"1rem"}}
-                    className="food-item-disc" value={description} readOnly></textarea>
+                    <p style={{padding:"0.5rem" , fontSize:"0.8rem"}}>{description}</p>
             </div>
         <span> ${price}</span>
 

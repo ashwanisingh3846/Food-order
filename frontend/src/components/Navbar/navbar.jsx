@@ -12,7 +12,7 @@ const Navbar = ({ setShowLogin }) => {
     return (
     <div className="navbar">
       <div onClick={()=>navigate("/")} className="navbar-left">
-          <img src={assets.logo} alt="logo" />
+          <h2>Food Order</h2>
       </div>
       <div className="navbar-center">
       <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}><a>Home</a></Link>

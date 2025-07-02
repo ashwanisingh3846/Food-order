@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="tomato">
                     <img  src={assets.logo} alt="" />
                     </div>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur</p> 
+                <p>we are a leading food delivery service provider in the city . we deliver food to your doorstep</p>
                 <div className="social">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />

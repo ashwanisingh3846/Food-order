@@ -47,12 +47,10 @@
 }
 @media (max-width: 750px) {
     .food-list{
-        background-color:gray;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    .container
     
 }
