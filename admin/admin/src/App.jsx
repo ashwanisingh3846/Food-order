@@ -10,7 +10,7 @@ import Add from './pages/Add/Add'
 import List from './pages/List/List'
 const App = () => {
   const token = localStorage.getItem("token");
-  const url = 'https://online-food-backend-erhb.onrender.com'
+  const url = 'http://localhost:8080'
   return (
     <div className='app-content'>
       <ToastContainer />
