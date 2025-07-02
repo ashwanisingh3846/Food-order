@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-content-left">
                     <div className="tomato">
-                    <img  src={assets.logo} alt="" />
+                   <h2>Food Order</h2>
                     </div>
                 <p>we are a leading food delivery service provider in the city . we deliver food to your doorstep</p>
                 <div className="social">

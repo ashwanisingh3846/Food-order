@@ -1,7 +1,7 @@
 
 
-import './Loader.css'
-export default function Loader() {
+import './Loading.css'
+export default function Loading() {
     return (
         <div className='loader'>
             <div className='loader-content'>

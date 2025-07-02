@@ -15,7 +15,6 @@ const FoodItems = ({id , name , image , price , description }) => {
             <img className="food-img" src={`${url}/images/${image}`} 
             alt="food" />
         <div className="item-count">
-        
                 {
                     !cartItems[id] ? 
                     <div className="single-add">
@@ -36,10 +35,9 @@ const FoodItems = ({id , name , image , price , description }) => {
                     <span>{name}</span>
                     <img src={assets.rating_starts} alt="rating" />
                 </div>
-                    <p style={{padding:"0.5rem" , fontSize:"0.8rem"}}>{description}</p>
+                <p style={{padding:"0.5rem" , fontSize:"0.8rem"}}>{description}</p>
             </div>
         <span> ${price}</span>
-
         </div>
         </div>
     </>

@@ -1,13 +1,15 @@
-
+import React from 'react'
 import './Appdo.css'
-
+import assets from '../../assets/assets'
 function AppDownload() {
     return (
+        //stripe dummy card number
+        //4242424242424242
         <div className='app-download-container'>
-            <h1 style={{fontSize:"1.5rem"}}>For Better Experience Download our App</h1>
+            <h2> For Better Experience Download Our  App</h2>
                 <div id='app-download' className='app-download'>
-                        <img style={{width:"15rem"}} className='app-download-icon' src={"https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png"} alt="google play" />    
-                           
+                        <img className='app-download-icon' src={assets.play_store} alt="google play" />    
+                        <img className='app-download-icon' src={assets.app_store} alt="apple store" />    
                 </div>
         </div>
     )

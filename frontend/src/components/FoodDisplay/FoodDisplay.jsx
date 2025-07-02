@@ -7,7 +7,7 @@ function FoodDisplay({ category }) {
 return (
     <> 
     <div className="both">
-    <h2>Top dishes near you</h2>
+    <h2>Top Dishes near you</h2>
     <div className="container">
             
         <div className="food-list">
